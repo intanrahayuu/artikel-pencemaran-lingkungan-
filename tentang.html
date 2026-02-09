@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tentang</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-[poppins] font-bold text-blue-700">
+          IntanRahayu
+        </h1>
+
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="index.html" class="hover:text-blue-600">Home</a>
+          <div class="relative">
+            <button
+              id="artikelBtn"
+              class="hover:text-blue-600 flex items-center gap-1"
+            >
+              Artikel
+              <span class="text-sm">▼</span>
+            </button>
+
+            <div
+              id="artikelMenu"
+              class="absolute left-0 mt-2 w-44 bg-white shadow-lg rounded-lg overflow-hidden z-50 max-h-0 opacity-0 transition-all duration-300 ease-out"
+            >
+              <a href="artikel.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Polusi Udara</a
+              >
+              <a href="artikel2.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Tanah</a
+              >
+              <a href="artikel3.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Air</a
+              >
+            </div>
+          </div>
+          <a href="tentang.html" class="hover:text-blue-600">Tentang</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
+        <a href="index.html" class="block py-2 border-b">Home</a>
+
+        <div>
+          <button
+            id="artikelMobileBtn"
+            class="w-full text-left py-2 border-b flex justify-between items-center"
+          >
+            Artikel
+            <span id="arrowMobile">▼</span>
+          </button>
+          <div
+            id="artikelMobileMenu"
+            class="pl-4 pb-2 space-y-1 max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out"
+          >
+            <a
+              href="artikel.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Polusi Udara</a
+            >
+            <a
+              href="artikel2.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Tanah</a
+            >
+            <a
+              href="artikel3.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Air</a
+            >
+          </div>
+        </div>
+
+        <a href="tentang.html" class="block py-2 border-b">Tentang</a>
+      </div>
+    </header>
+    <section class="max-w-6xl mx-auto px-6 py-16">
+      <div class="text-center mb-12">
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800">Tentang</h1>
+      </div>
+
+      <!-- konten -->
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="overflow-hidden rounded-2xl shadow-lg">
+          <img
+            src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d"
+            alt="Lingkungan tercemar"
+            class="w-full h-full object-cover hover:scale-105 transition duration-500"
+          />
+        </div>
+
+        <div>
+          <h2 class="text-2xl font-semibold text-gray-800 mb-4">
+            Mengapa Website Ini Dibuat?
+          </h2>
+
+          <p class="text-gray-600 mb-4">
+            Saat ini, pencemaran lingkungan menjadi salah satu masalah terbesar
+            di dunia. Sampah plastik, polusi udara, dan kerusakan alam terus
+            meningkat akibat kurangnya kesadaran manusia terhadap pentingnya
+            menjaga lingkungan.
+          </p>
+
+          <p class="text-gray-600 mb-4">
+            Website artikel ini hadir untuk memberikan informasi, edukasi, dan
+            wawasan mengenai kondisi lingkungan yang tercemar serta
+            langkah-langkah sederhana yang dapat dilakukan untuk membantu
+            menjaga bumi tetap lestari.
+          </p>
+
+          <p class="text-gray-600">
+            Kita semua harus percaya bahwa perubahan besar dimulai dari langkah
+            kecil. Dengan meningkatkan kesadaran, kita dapat bersama-sama
+            menciptakan lingkungan yang lebih bersih, sehat, dan berkelanjutan.
+          </p>
+        </div>
+      </div>
+
+      <!-- highlight -->
+      <div class="grid md:grid-cols-3 gap-6 mt-14 text-center">
+        <div class="bg-green-50 p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-green-700 text-lg">🌱 Edukasi</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Memberikan informasi tentang pencemaran lingkungan dan dampaknya.
+          </p>
+        </div>
+
+        <div class="bg-green-50 p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-green-700 text-lg">🌍 Kesadaran</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Mengajak masyarakat untuk lebih peduli terhadap lingkungan sekitar.
+          </p>
+        </div>
+
+        <div class="bg-green-50 p-6 rounded-xl shadow-sm">
+          <h3 class="font-semibold text-green-700 text-lg">♻️ Aksi Nyata</h3>
+          <p class="text-sm text-gray-600 mt-2">
+            Mendorong tindakan kecil yang berdampak besar bagi bumi.
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="max-w-5xl mx-auto px-6 py-10">
+      <div class="grid md:grid-cols-3 gap-6">
+        <div
+          class="bg-white shadow-md rounded-xl p-6 border border-gray-100 hover:shadow-lg transition"
+        >
+          <i class="fa-solid fa-user"></i>
+          <h3 class="font-semibold text-gray-800 text-lg">Nama Pembuat</h3>
+          <p class="text-gray-600 mt-2">Intan Rahayu | XII PPLG 1</p>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-xl p-6 border border-gray-100 hover:shadow-lg transition"
+        >
+          <i class="fa-solid fa-location-arrow"></i>
+          <h3 class="font-semibold text-gray-800 text-lg">Lokasi Pengamatan</h3>
+          <p class="text-gray-600 mt-2">SMK Informatika CBI</p>
+        </div>
+
+        <div
+          class="bg-white shadow-md rounded-xl p-6 border border-gray-100 hover:shadow-lg transition"
+        >
+          <i class="fa-solid fa-calendar"></i>
+          <h3 class="font-semibold text-gray-800 text-lg">Tanggal Penulisan</h3>
+          <p class="text-gray-600 mt-2">9 Februari 2026</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-16">
+      <div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-white text-xl font-bold mb-3">Intan Rahayu</h2>
+          <p class="text-sm">
+            Peduli lingkungan itu keren. Yuk mulai dari hal kecil di sekitarmu!
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Pintasan</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/index.html" class="hover:text-white">Home</a></li>
+            <li><a href="/index.html" class="hover:text-white">Artikel</a></li>
+            <li>
+              <a href="/tentang.html" class="hover:text-white">Tentang</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Tag</h3>
+          <ul class="space-y-2 text-sm">
+            <li>Projek IPAS</li>
+            <li>Pemerhati Lingkungan</li>
+            <li>Pencemaran Lingkungan</li>
+            <li>Jaga Lingkungan</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Kontak</h3>
+          <p class="text-sm">
+            <i class="fa-solid fa-envelope"></i> intanrahayu271207@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 text-center py-4 text-sm">
+        © 2026 SMK Informatika CBI — Dibuat oleh Intan Rahayu
+      </div>
+    </footer>
+
+    <script src="/assets/js/menu.js"></script>
+  </body>
+</html>

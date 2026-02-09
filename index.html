@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Pemerhati Lingkungan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <!-- navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-[poppins] font-bold text-blue-700">
+          IntanRahayu
+        </h1>
+
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="#" class="hover:text-blue-600">Home</a>
+          <div class="relative">
+            <button
+              id="artikelBtn"
+              class="hover:text-blue-600 flex items-center gap-1"
+            >
+              Artikel
+              <span class="text-sm">▼</span>
+            </button>
+
+            <div
+              id="artikelMenu"
+              class="absolute left-0 mt-2 w-44 bg-white shadow-lg rounded-lg overflow-hidden z-50 max-h-0 opacity-0 transition-all duration-300 ease-out"
+            >
+              <a href="artikel.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Polusi Udara</a
+              >
+              <a href="artikel2.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Tanah</a
+              >
+              <a href="artikel3.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Air</a
+              >
+            </div>
+          </div>
+          <a href="tentang.html" class="hover:text-blue-600">Tentang</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
+        <a href="#" class="block py-2 border-b">Home</a>
+
+        <div>
+          <button
+            id="artikelMobileBtn"
+            class="w-full text-left py-2 border-b flex justify-between items-center"
+          >
+            Artikel
+            <span id="arrowMobile">▼</span>
+          </button>
+          <div
+            id="artikelMobileMenu"
+            class="pl-4 pb-2 space-y-1 max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out"
+          >
+            <a
+              href="artikel.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Polusi Udara</a
+            >
+            <a
+              href="artikel2.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Tanah</a
+            >
+            <a
+              href="artikel3.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Air</a
+            >
+          </div>
+        </div>
+
+        <a href="tentang.html" class="block py-2 border-b">Tentang</a>
+      </div>
+    </header>
+
+    <!-- konten -->
+    <section class="text-white py-14 md:py-20">
+      <div class="max-w-4xl mx-auto text-center px-4">
+        <h2
+          class="text-3xl text-blue-600 md:text-4xl font-[poppins] font-bold mb-4"
+        >
+          Profile Pemerhati Lingkungan
+        </h2>
+        <p class="text-gray-800 opacity-90">
+          Sebuah ruang edukasi untuk meningkatkan kesadaran tentang pencemaran
+          lingkungan dan pentingnya menjaga bumi demi masa depan yang lebih
+          baik.
+        </p>
+      </div>
+    </section>
+
+    <main class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-8">
+      <div class="md:col-span-2 space-y-8">
+        <article class="bg-white rounded-xl shadow p-6">
+          <h3 class="text-xl md:text-2xl font-bold mb-2">
+            PENCEMARAN LINGKUNGAN SEKOLAH: ANCAMAN NYATA BAGI GENERASI MUDA
+          </h3>
+          <p class="text-gray-700 mt-4">
+            Lingkungan sekolah seharusnya menjadi tempat yang bersih, sehat, dan
+            nyaman untuk belajar. Namun, kenyataannya masih banyak sekolah yang
+            menghadapi masalah pencemaran. Mulai dari udara yang kotor, tanah
+            yang tercemar sampah, hingga air yang tidak lagi bersih. Jika
+            dibiarkan, kondisi ini bukan hanya merusak lingkungan, tetapi juga
+            membahayakan kesehatan warga sekolah.
+          </p>
+          <br />
+          <p class="text-gray-700">
+            Berikut tiga jenis pencemaran yang paling sering terjadi di
+            lingkungan sekolah :
+          </p>
+        </article>
+
+        <article class="bg-white rounded-xl shadow p-6">
+          <h3
+            class="text-xl md:text-2xl font-bold mb-2 hover:text-blue-600 cursor-pointer"
+          >
+            Polusi Udara
+          </h3>
+          <p class="text-sm text-gray-500 mb-4">9 Februari 2026</p>
+          <p class="text-gray-700 mb-4">
+            Lingkungan sekolah seharusnya menjadi tempat yang sehat dan nyaman
+            bagi siswa untuk belajar. Namun, salah satu sumber pencemaran yang
+            sering tidak disadari adalah polusi udara dari parkiran motor
+            sekolah. Setiap pagi dan siang hari, ratusan kendaraan bermotor
+            keluar masuk area sekolah, menghasilkan asap knalpot yang mencemari
+            udara sekitar. Jika kondisi ini terus terjadi tanpa pengelolaan yang
+            baik, dampaknya bisa dirasakan langsung oleh seluruh warga sekolah.
+          </p>
+          <a
+            href="artikel.html"
+            class="text-blue-600 font-semibold hover:underline"
+          >
+            Baca Selengkapnya...
+          </a>
+        </article>
+
+        <article class="bg-white rounded-xl shadow p-6">
+          <h3
+            class="text-xl md:text-2xl font-bold mb-2 hover:text-blue-600 cursor-pointer"
+          >
+            Pencemaran Tanah
+          </h3>
+          <p class="text-sm text-gray-500 mb-4">9 Februari 2026</p>
+          <p class="text-gray-700 mb-4">
+            Lingkungan sekolah yang bersih mencerminkan kebiasaan baik warganya.
+            Namun, masih banyak sekolah yang menghadapi masalah pencemaran tanah
+            akibat sampah yang berserakan di halaman, taman, maupun sekitar
+            kelas. Bungkus makanan, botol plastik, tisu, dan sisa jajanan sering
+            terlihat di berbagai sudut sekolah. Jika dibiarkan, kondisi ini
+            tidak hanya merusak lingkungan, tetapi juga dapat menimbulkan
+            berbagai masalah kesehatan.
+          </p>
+          <a
+            href="artikel2.html"
+            class="text-blue-600 font-semibold hover:underline"
+          >
+            Baca Selengkapnya...
+          </a>
+        </article>
+
+        <article class="bg-white rounded-xl shadow p-6">
+          <h3
+            class="text-xl md:text-2xl font-bold mb-2 hover:text-blue-600 cursor-pointer"
+          >
+            Pencemaran Air
+          </h3>
+          <p class="text-sm text-gray-500 mb-4">9 Februari 2026</p>
+          <p class="text-gray-700 mb-4">
+            Saluran air atau got di sekitar sekolah memiliki peran penting dalam
+            menjaga kebersihan dan kelancaran lingkungan. Namun, di banyak
+            sekolah, got justru menjadi tempat penumpukan sampah dan limbah. Air
+            yang seharusnya mengalir dengan bersih berubah menjadi keruh,
+            berbau, dan tidak sehat. Jika kondisi ini dibiarkan, dampaknya dapat
+            dirasakan oleh seluruh warga sekolah, baik dari segi kesehatan
+            maupun kenyamanan.
+          </p>
+          <a
+            href="artikel3.html"
+            class="text-blue-600 font-semibold hover:underline"
+          >
+            Baca Selengkapnya...
+          </a>
+        </article>
+      </div>
+
+      <!-- cbi -->
+      <aside class="space-y-6">
+        <div class="bg-white p-5 rounded-xl shadow">
+          <h4 class="font-bold mb-3 ml-1">SMK Informatika CBI</h4>
+          <img
+            src="/assets/image/sekolah_cbi.jpeg"
+            alt=""
+            class="h-full w-full rounded-md"
+          />
+          <p class="text-gray-700 my-5 text-left">
+            SMK Informatika CBI merupakan lokasi dilaksanakannya pengamatan
+            terhadap kondisi lingkungan sekolah.
+          </p>
+
+          <p class="text-gray-700 mb-3 text-left">
+            Observasi ini bertujuan untuk memahami tingkat pencemaran yang
+            terjadi serta meningkatkan kesadaran warga sekolah akan pentingnya
+            menjaga kebersihan dan kelestarian lingkungan.
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-16">
+      <div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-white text-xl font-bold mb-3">Intan Rahayu</h2>
+          <p class="text-sm">
+            Peduli lingkungan itu keren. Yuk mulai dari hal kecil di sekitarmu!
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Pintasan</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/index.html" class="hover:text-white">Home</a></li>
+            <li><a href="/index.html" class="hover:text-white">Artikel</a></li>
+            <li>
+              <a href="/tentang.html" class="hover:text-white">Tentang</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Tag</h3>
+          <ul class="space-y-2 text-sm">
+            <li>Projek IPAS</li>
+            <li>Pemerhati Lingkungan</li>
+            <li>Pencemaran Lingkungan</li>
+            <li>Jaga Lingkungan</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Kontak</h3>
+          <p class="text-sm">
+            <i class="fa-solid fa-envelope"></i> intanrahayu271207@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 text-center py-4 text-sm">
+        © 2026 SMK Informatika CBI — Dibuat oleh Intan Rahayu
+      </div>
+    </footer>
+
+    <script src="/assets/js/menu.js"></script>
+  </body>
+</html>

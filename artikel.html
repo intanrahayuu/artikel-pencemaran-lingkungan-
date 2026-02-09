@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polusi Udara</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <!-- navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-[poppins] font-bold text-blue-700">
+          IntanRahayu
+        </h1>
+
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="index.html" class="hover:text-blue-600">Home</a>
+          <div class="relative">
+            <button
+              id="artikelBtn"
+              class="hover:text-blue-600 flex items-center gap-1"
+            >
+              Artikel
+              <span class="text-sm">▼</span>
+            </button>
+
+            <div
+              id="artikelMenu"
+              class="absolute left-0 mt-2 w-44 bg-white shadow-lg rounded-lg overflow-hidden z-50 max-h-0 opacity-0 transition-all duration-300 ease-out"
+            >
+              <a href="artikel.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Polusi Udara</a
+              >
+              <a href="artikel2.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Tanah</a
+              >
+              <a href="artikel3.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Air</a
+              >
+            </div>
+          </div>
+          <a href="tentang.html" class="hover:text-blue-600">Tentang</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
+        <a href="index.html" class="block py-2 border-b">Home</a>
+
+        <div>
+          <button
+            id="artikelMobileBtn"
+            class="w-full text-left py-2 border-b flex justify-between items-center"
+          >
+            Artikel
+            <span id="arrowMobile">▼</span>
+          </button>
+          <div
+            id="artikelMobileMenu"
+            class="pl-4 pb-2 space-y-1 max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out"
+          >
+            <a
+              href="artikel.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Polusi Udara</a
+            >
+            <a
+              href="artikel2.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Tanah</a
+            >
+            <a
+              href="artikel3.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Air</a
+            >
+          </div>
+        </div>
+
+        <a href="tentang.html" class="block py-2 border-b">Tentang</a>
+      </div>
+    </header>
+
+    <!-- konten -->
+    <main
+      class="max-w-4xl mx-auto bg-white shadow rounded-xl overflow-hidden my-6"
+    >
+      <img
+        src="/assets/image/polusi3.jpeg"
+        class="w-full h-64 md:h-80 object-cover"
+      />
+
+      <article class="p-6 md:p-10 space-y-6">
+        <header>
+          <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+            Polusi Udara
+          </h1>
+          <p class="text-sm text-gray-500 mt-2">
+            Ditulis oleh Intan Rahayu <br />
+            SMK Informatika CBI • 9 Februari 2026
+          </p>
+        </header>
+
+        <hr />
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          POLUSI UDARA DARI PARKIRAN MOTOR SEKOLAH: MASALAH YANG SERING
+          DIABAIKAN
+        </h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Lingkungan sekolah seharusnya menjadi tempat yang sehat dan nyaman
+          bagi siswa untuk belajar. Namun, salah satu sumber pencemaran yang
+          sering tidak disadari adalah polusi udara dari parkiran motor sekolah.
+          Setiap pagi dan siang hari, ratusan kendaraan bermotor keluar masuk
+          area sekolah, menghasilkan asap knalpot yang mencemari udara sekitar.
+          Jika kondisi ini terus terjadi tanpa pengelolaan yang baik, dampaknya
+          bisa dirasakan langsung oleh seluruh warga sekolah.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          Penyebab polusi udara di lingkungan sekolah
+        </h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Polusi udara dari parkiran motor terutama berasal dari gas buang
+          kendaraan bermotor. Asap knalpot mengandung zat berbahaya seperti
+          karbon monoksida, karbon dioksida, dan partikel halus yang tidak
+          terlihat oleh mata.
+        </p>
+
+        <p class="leading-relaxed text-gray-700">
+          Beberapa penyebab utama antara lain:
+        </p>
+
+        <p class="leading-relaxed text-gray-700">
+          <strong>Pertama</strong>, banyaknya jumlah motor siswa yang digunakan
+          setiap hari. Semakin banyak kendaraan, semakin tinggi pula emisi yang
+          dihasilkan.
+        </p>
+
+        <p class="leading-relaxed text-gray-700">
+          <strong>Kedua</strong>, kebiasaan menyalakan motor terlalu lama saat
+          parkir. Banyak siswa membiarkan mesin tetap hidup ketika menunggu
+          teman atau saat hendak pulang, sehingga asap terus keluar dan menumpuk
+          di udara.
+        </p>
+
+        <p class="leading-relaxed text-gray-700">
+          <strong>Ketiga</strong>, kondisi parkiran yang sempit dan kurang
+          sirkulasi udara. Jika parkiran tertutup atau dekat dengan ruang kelas,
+          asap kendaraan dapat masuk ke area belajar.
+        </p>
+
+        <p class="leading-relaxed text-gray-700">
+          <strong>Keempat</strong>, kendaraan yang tidak terawat. Motor dengan
+          mesin kurang baik biasanya menghasilkan asap lebih tebal dan lebih
+          berbahaya.
+        </p>
+
+        <br />
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          Dampak bagi kesehatan dan lingkungan sekolah
+        </h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Polusi udara dari parkiran motor tidak hanya membuat udara terasa
+          pengap, tetapi juga berdampak langsung pada kesehatan siswa dan guru.
+          Dalam jangka pendek, udara kotor dapat menyebabkan pusing, batuk,
+          iritasi mata, dan sesak napas. Siswa yang memiliki riwayat asma atau
+          alergi pernapasan biasanya lebih sensitif terhadap polusi.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Dalam jangka panjang, paparan asap kendaraan secara terus-menerus
+          dapat menurunkan kesehatan paru-paru, mengganggu konsentrasi belajar,
+          serta membuat tubuh lebih mudah lelah. Selain itu, lingkungan sekolah
+          menjadi kurang nyaman dan tidak sehat.
+        </p>
+
+        <p class="leading-relaxed text-gray-700">
+          Tidak hanya manusia, tanaman di sekitar parkiran juga bisa terdampak.
+          Debu dan polusi dapat menghambat pertumbuhan tanaman serta mengurangi
+          kualitas udara alami yang seharusnya dihasilkan oleh pepohonan.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          Cara mengurangi polusi
+        </h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Masalah polusi udara di parkiran sekolah bukan hal yang tidak bisa
+          diatasi. Dengan kesadaran dan kebiasaan kecil, lingkungan sekolah bisa
+          menjadi jauh lebih sehat.
+        </p>
+
+        <p class="leading-relaxed text-gray-700">
+          Matikan mesin motor saat parkir atau menunggu. Jangan membiarkan
+          kendaraan menyala tanpa alasan karena hanya menambah polusi.
+        </p>
+
+        <p class="leading-relaxed text-gray-700">
+          Kurangi penggunaan kendaraan bermotor jika jarak rumah dekat. Berjalan
+          kaki, bersepeda, atau berbagi kendaraan dengan teman bisa menjadi
+          solusi sederhana.
+        </p>
+
+        <p class="leading-relaxed text-gray-700">
+          Rawat kendaraan secara rutin agar pembakaran mesin lebih sempurna dan
+          tidak menghasilkan asap berlebihan.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Sekolah juga dapat menanam pohon di sekitar area parkir untuk membantu
+          menyaring udara dan mengurangi polusi.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          <strong>Yang paling penting</strong>, bangun kesadaran bahwa udara
+          bersih adalah hak bersama. Lingkungan sekolah yang sehat akan membuat
+          proses belajar menjadi lebih nyaman dan produktif.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">Kesimpulan</h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Polusi udara dari parkiran motor sekolah adalah masalah nyata yang
+          sering dianggap sepele. Padahal, dampaknya dapat memengaruhi
+          kesehatan, kenyamanan, dan kualitas belajar siswa. Dengan langkah
+          sederhana seperti mematikan mesin saat parkir, mengurangi penggunaan
+          kendaraan, serta menjaga kesadaran lingkungan, polusi dapat dikurangi
+          secara signifikan.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Mari bersama menjaga udara sekolah tetap bersih. Karena dari
+          lingkungan yang sehat, lahir generasi yang kuat dan peduli terhadap
+          masa depan!
+        </p>
+
+        <hr />
+
+        <a
+          href="index.html"
+          class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+        >
+          <i class="fa-solid fa-house"></i>
+          Kembali ke Halaman Utama
+        </a>
+      </article>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-16">
+      <div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-white text-xl font-bold mb-3">Intan Rahayu</h2>
+          <p class="text-sm">
+            Peduli lingkungan itu keren. Yuk mulai dari hal kecil di sekitarmu!
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Pintasan</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/index.html" class="hover:text-white">Home</a></li>
+            <li><a href="/index.html" class="hover:text-white">Artikel</a></li>
+            <li>
+              <a href="/tentang.html" class="hover:text-white">Tentang</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Tag</h3>
+          <ul class="space-y-2 text-sm">
+            <li>Projek IPAS</li>
+            <li>Pemerhati Lingkungan</li>
+            <li>Pencemaran Lingkungan</li>
+            <li>Jaga Lingkungan</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Kontak</h3>
+          <p class="text-sm">
+            <i class="fa-solid fa-envelope"></i> intanrahayu271207@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 text-center py-4 text-sm">
+        © 2026 SMK Informatika CBI — Dibuat oleh Intan Rahayu
+      </div>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>

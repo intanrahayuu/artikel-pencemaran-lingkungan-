@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pencemaran Air</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <!-- navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-[poppins] font-bold text-blue-700">
+          IntanRahayu
+        </h1>
+
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="index.html" class="hover:text-blue-600">Home</a>
+          <div class="relative">
+            <button
+              id="artikelBtn"
+              class="hover:text-blue-600 flex items-center gap-1"
+            >
+              Artikel
+              <span class="text-sm">▼</span>
+            </button>
+
+            <div
+              id="artikelMenu"
+              class="absolute left-0 mt-2 w-44 bg-white shadow-lg rounded-lg overflow-hidden z-50 max-h-0 opacity-0 transition-all duration-300 ease-out"
+            >
+              <a href="artikel.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Polusi Udara</a
+              >
+              <a href="artikel2.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Tanah</a
+              >
+              <a href="artikel3.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Air</a
+              >
+            </div>
+          </div>
+          <a href="tentang.html" class="hover:text-blue-600">Tentang</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
+        <a href="index.html" class="block py-2 border-b">Home</a>
+
+        <div>
+          <button
+            id="artikelMobileBtn"
+            class="w-full text-left py-2 border-b flex justify-between items-center"
+          >
+            Artikel
+            <span id="arrowMobile">▼</span>
+          </button>
+          <div
+            id="artikelMobileMenu"
+            class="pl-4 pb-2 space-y-1 max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out"
+          >
+            <a
+              href="artikel.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Polusi Udara</a
+            >
+            <a
+              href="artikel2.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Tanah</a
+            >
+            <a
+              href="artikel3.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Air</a
+            >
+          </div>
+        </div>
+
+        <a href="tentang.html" class="block py-2 border-b">Tentang</a>
+      </div>
+    </header>
+
+    <!-- konten -->
+    <main
+      class="max-w-4xl mx-auto bg-white shadow rounded-xl overflow-hidden my-6"
+    >
+      <img
+        src="/assets/image/air.jpeg"
+        alt="Cover Artikel"
+        class="w-full h-64 md:h-80 object-cover"
+      />
+
+      <article class="p-6 md:p-10 space-y-6">
+        <header>
+          <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+            Pencemaran Air
+          </h1>
+          <p class="text-sm text-gray-500 mt-2">
+            Ditulis oleh Intan Rahayu <br />
+            SMK Informatika CBI • 9 Februari 2026
+          </p>
+        </header>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          PENCEMARAN AIR DI GOT SEKITAR LINGKUNGAN SEKOLAH
+        </h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Saluran air atau got di sekitar sekolah memiliki peran penting dalam
+          menjaga kebersihan dan kelancaran lingkungan. Namun, di banyak
+          sekolah, got justru menjadi tempat penumpukan sampah dan limbah. Air
+          yang seharusnya mengalir dengan bersih berubah menjadi keruh, berbau,
+          dan tidak sehat. Jika kondisi ini dibiarkan, dampaknya dapat dirasakan
+          oleh seluruh warga sekolah, baik dari segi kesehatan maupun
+          kenyamanan.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          Penyebab pencemaran air di saluran got
+        </h3>
+        <p class="leading-relaxed text-gray-700">
+          Pencemaran air di got umumnya disebabkan oleh kebiasaan membuang
+          sesuatu ke saluran air tanpa memikirkan akibatnya.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          <strong>Pertama</strong>, pembuangan sampah ke dalam got. Plastik,
+          bungkus makanan, tisu, dan sisa jajanan sering dibuang ke saluran air
+          sehingga menyumbat aliran dan mencemari air.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          <strong>Kedua</strong>, limbah dari kantin sekolah. Sisa makanan,
+          minyak, dan minuman yang dibuang ke saluran air dapat membuat air
+          menjadi keruh dan menimbulkan bau tidak sedap.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          <strong>Ketiga</strong>, penggunaan sabun atau deterjen berlebihan
+          saat membersihkan. Busa sabun yang masuk ke got dapat mengganggu
+          kualitas air dan lingkungan sekitar.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          <strong>Keempat</strong>, kurangnya perawatan saluran air. Got yang
+          jarang dibersihkan akan mudah tersumbat dan menjadi tempat penumpukan
+          kotoran.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          Dampak bagi lingkungan dan kesehatan
+        </h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Pencemaran air di got tidak hanya merusak lingkungan, tetapi juga
+          berdampak langsung pada kesehatan. Air got yang kotor dan tersumbat
+          dapat menimbulkan bau tidak sedap serta membuat lingkungan sekolah
+          terasa tidak nyaman. Genangan air kotor juga menjadi tempat berkembang
+          biaknya nyamuk yang dapat menyebabkan penyakit seperti demam berdarah.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Selain itu, air yang tercemar dapat membawa bakteri dan kuman penyebab
+          penyakit seperti diare, gatal-gatal, dan infeksi kulit. Jika
+          dibiarkan, kondisi ini bisa membahayakan kesehatan warga sekolah.
+          Lingkungan yang memiliki saluran air kotor juga terlihat tidak terawat
+          dan mengurangi kenyamanan belajar.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          Cara menjaga kebersihan air di sekitar sekolah
+        </h3>
+        <p class="leading-relaxed text-gray-700">
+          Masalah pencemaran air dapat dicegah jika semua warga sekolah peduli
+          terhadap kebersihan.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Jangan membuang sampah ke dalam got, sekecil apa pun. Sampah yang
+          terlihat kecil dapat menyebabkan sumbatan besar.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Buang sisa makanan dan minyak pada tempat yang sesuai, bukan ke
+          saluran air.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Gunakan sabun secukupnya agar tidak mencemari air.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Ikut menjaga kebersihan got dengan kegiatan kerja bakti atau piket
+          kebersihan.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Air bersih dan saluran yang lancar adalah tanggung jawab bersama.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">Kesimpulan</h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Pencemaran air di got sekitar lingkungan sekolah adalah masalah yang
+          sering terjadi akibat kebiasaan membuang sampah dan limbah
+          sembarangan. Dampaknya tidak hanya merusak lingkungan, tetapi juga
+          membahayakan kesehatan. Dengan kebiasaan sederhana seperti tidak
+          membuang sampah ke got, menjaga kebersihan, dan peduli terhadap
+          lingkungan, saluran air dapat tetap bersih dan berfungsi dengan baik.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Mari bersama menjaga kebersihan air di lingkungan sekolah. Karena
+          lingkungan yang bersih menciptakan suasana belajar yang sehat, nyaman,
+          dan lebih baik untuk masa depan!
+        </p>
+
+        <hr />
+
+        <a
+          href="index.html"
+          class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+        >
+          <i class="fa-solid fa-house"></i>
+          Kembali ke Halaman Utama
+        </a>
+      </article>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-16">
+      <div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-white text-xl font-bold mb-3">Intan Rahayu</h2>
+          <p class="text-sm">
+            Peduli lingkungan itu keren. Yuk mulai dari hal kecil di sekitarmu!
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Pintasan</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/index.html" class="hover:text-white">Home</a></li>
+            <li><a href="/index.html" class="hover:text-white">Artikel</a></li>
+            <li>
+              <a href="/tentang.html" class="hover:text-white">Tentang</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Tag</h3>
+          <ul class="space-y-2 text-sm">
+            <li>Projek IPAS</li>
+            <li>Pemerhati Lingkungan</li>
+            <li>Pencemaran Lingkungan</li>
+            <li>Jaga Lingkungan</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Kontak</h3>
+          <p class="text-sm">
+            <i class="fa-solid fa-envelope"></i> intanrahayu271207@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 text-center py-4 text-sm">
+        © 2026 SMK Informatika CBI — Dibuat oleh Intan Rahayu
+      </div>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>

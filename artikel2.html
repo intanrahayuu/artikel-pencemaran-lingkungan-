@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pencemaran Tanah</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body class="bg-gray-100 text-gray-800">
+    <!-- navbar -->
+    <header class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-[poppins] font-bold text-blue-700">
+          IntanRahayu
+        </h1>
+
+        <nav class="hidden md:flex space-x-6 font-medium">
+          <a href="index.html" class="hover:text-blue-600">Home</a>
+          <div class="relative">
+            <button
+              id="artikelBtn"
+              class="hover:text-blue-600 flex items-center gap-1"
+            >
+              Artikel
+              <span class="text-sm">▼</span>
+            </button>
+
+            <div
+              id="artikelMenu"
+              class="absolute left-0 mt-2 w-44 bg-white shadow-lg rounded-lg overflow-hidden z-50 max-h-0 opacity-0 transition-all duration-300 ease-out"
+            >
+              <a href="artikel.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Polusi Udara</a
+              >
+              <a href="artikel2.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Tanah</a
+              >
+              <a href="artikel3.html" class="block px-4 py-2 hover:bg-gray-100"
+                >Artikel Pencemaran Air</a
+              >
+            </div>
+          </div>
+          <a href="tentang.html" class="hover:text-blue-600">Tentang</a>
+        </nav>
+
+        <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+      </div>
+
+      <div id="mobileMenu" class="hidden md:hidden px-4 pb-4 space-y-2">
+        <a href="index.html" class="block py-2 border-b">Home</a>
+
+        <div>
+          <button
+            id="artikelMobileBtn"
+            class="w-full text-left py-2 border-b flex justify-between items-center"
+          >
+            Artikel
+            <span id="arrowMobile">▼</span>
+          </button>
+          <div
+            id="artikelMobileMenu"
+            class="pl-4 pb-2 space-y-1 max-h-0 opacity-0 overflow-hidden transition-all duration-300 ease-out"
+          >
+            <a
+              href="artikel.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Polusi Udara</a
+            >
+            <a
+              href="artikel2.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Tanah</a
+            >
+            <a
+              href="artikel3.html"
+              class="block py-1 text-sm hover:text-blue-600"
+              >Artikel Pencemaran Air</a
+            >
+          </div>
+        </div>
+
+        <a href="tentang.html" class="block py-2 border-b">Tentang</a>
+      </div>
+    </header>
+
+    <!-- konten -->
+    <main
+      class="max-w-4xl mx-auto bg-white shadow rounded-xl overflow-hidden my-6"
+    >
+      <img
+        src="/assets/image/tanah.jpeg"
+        class="w-full h-64 md:h-80 object-cover"
+      />
+
+      <article class="p-6 md:p-10 space-y-6">
+        <header>
+          <h1 class="text-3xl md:text-4xl font-bold leading-tight">
+            Pencemaran Tanah
+          </h1>
+          <p class="text-sm text-gray-500 mt-2">
+            Ditulis oleh Intan Rahayu <br />
+            SMK Informatika CBI • 9 Februari 2026
+          </p>
+        </header>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          PENCEMARAN TANAH DI SEKITAR LINGKUNGAN SEKOLAH AKIBAT SAMPAH
+          BERSERAKAN
+        </h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Lingkungan sekolah yang bersih mencerminkan kebiasaan baik warganya.
+          Namun, masih banyak sekolah yang menghadapi masalah pencemaran tanah
+          akibat sampah yang berserakan di halaman, taman, maupun sekitar kelas.
+          Bungkus makanan, botol plastik, tisu, dan sisa jajanan sering terlihat
+          di berbagai sudut sekolah. Jika dibiarkan, kondisi ini tidak hanya
+          merusak lingkungan, tetapi juga dapat menimbulkan berbagai masalah
+          kesehatan.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          Penyebab pencemaran tanah di sekitar lingkungan sekolah
+        </h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Pencemaran tanah akibat sampah berserakan umumnya terjadi karena
+          kebiasaan manusia yang kurang peduli terhadap kebersihan.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          <strong>Pertama</strong>, rendahnya kesadaran untuk membuang sampah
+          pada tempatnya. Banyak siswa masih terbiasa meninggalkan sampah
+          setelah makan atau jajan tanpa memikirkan dampaknya.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          <strong>Kedua</strong>, penggunaan plastik sekali pakai yang tinggi.
+          Bungkus makanan, kantong plastik, dan botol minuman menjadi jenis
+          sampah paling banyak ditemukan karena sulit terurai.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          <strong>Ketiga</strong>, kurangnya pengelolaan sampah. Tempat sampah
+          yang terbatas, tidak dipisahkan antara organik dan non-organik, serta
+          jarang dikosongkan membuat sampah mudah menumpuk dan berserakan.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          <strong>Keempat</strong>, kebiasaan menunda membersihkan lingkungan.
+          Sampah yang dibiarkan terlalu lama akan menyebar karena angin, hujan,
+          atau aktivitas manusia.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          Dampak bagi lingkungan dan kesehatan
+        </h3>
+
+        <p class="leading-relaxed text-gray-700">
+          Pencemaran tanah bukan hanya masalah kebersihan, tetapi juga berdampak
+          langsung pada kesehatan warga sekolah. Sampah yang menumpuk dapat
+          menimbulkan bau tidak sedap dan merusak pemandangan lingkungan
+          sekolah. Tanah yang tertutup sampah plastik juga menjadi tidak sehat
+          dan sulit menyerap air.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Selain itu, sampah dapat menjadi tempat berkembangnya bakteri, lalat,
+          dan nyamuk yang membawa penyakit. Risiko penyakit seperti diare,
+          infeksi kulit, dan gangguan kesehatan lainnya bisa meningkat.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Dalam jangka panjang, sampah plastik yang tidak terurai dapat
+          mencemari tanah dan lingkungan sekitar selama bertahun-tahun. Jika
+          terus dibiarkan, lingkungan sekolah akan terlihat kotor dan tidak
+          nyaman untuk belajar.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">
+          Cara menjaga kebersihan tanah
+        </h3>
+        <p class="leading-relaxed text-gray-700">
+          Masalah sampah berserakan bisa diatasi jika semua warga sekolah
+          memiliki kesadaran yang sama.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Biasakan membuang sampah pada tempatnya setelah makan atau menggunakan
+          sesuatu. Jangan meninggalkan sampah sekecil apa pun.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Kurangi penggunaan plastik sekali pakai dengan membawa botol minum
+          sendiri dan tempat makan dari rumah.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Pisahkan sampah organik dan non-organik agar lebih mudah dikelola dan
+          didaur ulang.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Ikut menjaga kebersihan lingkungan sekolah, baik saat piket kelas
+          maupun kegiatan kerja bakti.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Lingkungan yang bersih bukan hanya tanggung jawab petugas kebersihan,
+          tetapi tanggung jawab bersama.
+        </p>
+
+        <h3 class="text-xl md:text-2xl font-bold leading-tight">Kesimpulan</h3>
+        <p class="leading-relaxed text-gray-700">
+          Pencemaran tanah akibat sampah berserakan di sekitar lingkungan
+          sekolah adalah masalah yang sering dianggap sepele, namun memiliki
+          dampak besar bagi kesehatan dan kenyamanan. Dengan kebiasaan sederhana
+          seperti membuang sampah pada tempatnya, mengurangi plastik, dan
+          menjaga kebersihan bersama, lingkungan sekolah dapat menjadi lebih
+          bersih dan sehat.
+        </p>
+        <p class="leading-relaxed text-gray-700">
+          Mari mulai dari diri sendiri. Sekolah bersih menciptakan suasana
+          belajar yang nyaman dan masa depan yang lebih baik!
+        </p>
+
+        <hr />
+
+        <a
+          href="index.html"
+          class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition"
+        >
+          <i class="fa-solid fa-house"></i>
+          Kembali ke Halaman Utama
+        </a>
+      </article>
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-gray-900 text-gray-300 mt-16">
+      <div class="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-4 gap-8">
+        <div>
+          <h2 class="text-white text-xl font-bold mb-3">Intan Rahayu</h2>
+          <p class="text-sm">
+            Peduli lingkungan itu keren. Yuk mulai dari hal kecil di sekitarmu!
+          </p>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Pintasan</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="/index.html" class="hover:text-white">Home</a></li>
+            <li><a href="/index.html" class="hover:text-white">Artikel</a></li>
+            <li>
+              <a href="/tentang.html" class="hover:text-white">Tentang</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Tag</h3>
+          <ul class="space-y-2 text-sm">
+            <li>Projek IPAS</li>
+            <li>Pemerhati Lingkungan</li>
+            <li>Pencemaran Lingkungan</li>
+            <li>Jaga Lingkungan</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="text-white font-semibold mb-3">Kontak</h3>
+          <p class="text-sm">
+            <i class="fa-solid fa-envelope"></i> intanrahayu271207@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-700 text-center py-4 text-sm">
+        © 2026 SMK Informatika CBI — Dibuat oleh Intan Rahayu
+      </div>
+    </footer>
+
+    <script src="assets/js/menu.js"></script>
+  </body>
+</html>
